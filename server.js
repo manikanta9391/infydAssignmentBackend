@@ -10,7 +10,7 @@ const app=express()
 app.use(express.json())
 app.use(cors())
 
-dbcon('mongodb+srv://manikanta:manikanta@cluster0.5uoum.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+dbcon(url)
 
 app.use('/',exRouter)
 
